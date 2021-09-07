@@ -20,7 +20,7 @@ In this project, you take a fairly complex application used to search a movie da
 * [ ] Create a forked copy of this project.
 * [ ] Clone your OWN version of the repository in your terminal
 * [ ] cd into the project base directory `cd web-module-project-redux`
-* [ ] Download project dependencies by running `npm install``
+* [ ] Download project dependencies by running `npm install`
 * [ ] Start up the app using `npm start`
 
 ### Task 2: Project Requirements
