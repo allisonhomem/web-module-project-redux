@@ -10,6 +10,6 @@ export const toggleFavorite = () => {
     return({type:TOGGLE_FAVORITE})
 }
 
-export const removeFavorite = () => {
-    return({type:REMOVE_FAVORITE})
+export const removeFavorite = (id) => {
+    return({type:REMOVE_FAVORITE,payload:id})
 }

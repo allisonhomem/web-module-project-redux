@@ -5,23 +5,26 @@ export const initialFavoritesState = {
     displayFavorites: true
 }
 
-const reducer = (state=initialFavoritesState, action) => {
+const favoritesReducer = (state=initialFavoritesState, action) => {
     switch(action.type) {
         case ADD_FAVORITE:
             return {
+                ...state,
                 favorites: [...state.favorites, action.payload]
             }
         case TOGGLE_FAVORITE:
             return {
+                ...state,
                 displayFavorites: !state.displayFavorites
             }
         case REMOVE_FAVORITE:
             return {
-                
+                ...state,
+                favorites: state.favorites.filter(item=>(action.payload !== item.id))
             }
         default:
             return state;
     }
 }
 
-export default reducer;
+export default favoritesReducer;
